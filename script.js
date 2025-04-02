@@ -53,6 +53,8 @@ if (conferma == true) {
       return x - sconto40 * (x / 100);
     }
     alert(prezzoFinale + "\nQuesto è il prezzo del tuo biglietto");
+  } else {
+    alert(x + "\nQuesto è il prezzo del tuo biglietto");
   }
 } else {
   alert("Nooooo ricarica la pagina :(");
