@@ -54,7 +54,7 @@ if (conferma == true) {
     }
     alert(prezzoFinale + "\nQuesto è il prezzo del tuo biglietto");
   } else {
-    alert(x + "\nQuesto è il prezzo del tuo biglietto");
+    alert(x + "€" + "\nQuesto è il prezzo del tuo biglietto");
   }
 } else {
   alert("Nooooo ricarica la pagina :(");
