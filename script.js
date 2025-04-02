@@ -42,19 +42,19 @@ if (conferma == true) {
   alert("Daje, vediamo il tuo biglietto quanto verrebbe a costare...");
 
   if (userAge < 18) {
-    let prezzoFinale = prezzoConSconto().toFixed(2) + "€";
+    let prezzoFinale = prezzoConSconto() + "€";
     function prezzoConSconto() {
       return x - sconto20 * (x / 100);
     }
-    alert(prezzoFinale + "\nQuesto è il prezzo del tuo biglietto");
+    alert(prezzoFinale.toFixed(2) + "\nQuesto è il prezzo del tuo biglietto");
   } else if (userAge > 65) {
-    let prezzoFinale = prezzoConSconto().toFixed(2) + "€";
+    let prezzoFinale = prezzoConSconto() + "€";
     function prezzoConSconto() {
       return x - sconto40 * (x / 100);
     }
-    alert(prezzoFinale + "\nQuesto è il prezzo del tuo biglietto");
+    alert(prezzoFinale.toFixed(2) + "\nQuesto è il prezzo del tuo biglietto");
   } else {
-    alert(x + "€" + "\nQuesto è il prezzo del tuo biglietto");
+    alert(x.toFixed(2) + "€" + "\nQuesto è il prezzo del tuo biglietto");
   }
 } else {
   alert("Nooooo ricarica la pagina :(");
